@@ -16,9 +16,6 @@ class CmsContentItemKeyMapper implements CmsContentItemKeyMapperInterface
      */
     protected $contentFacade;
 
-    /**
-     * @param \Spryker\Zed\CmsContentWidgetContentConnector\Dependency\Facade\CmsContentWidgetContentConnectorToContentFacadeInterface $contentFacade
-     */
     public function __construct(CmsContentWidgetContentConnectorToContentFacadeInterface $contentFacade)
     {
         $this->contentFacade = $contentFacade;

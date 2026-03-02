@@ -33,9 +33,6 @@ class CmsContentWidgetContentConnectorFacadeTest extends Unit
      */
     protected const CONTENT_KEY = 'test-key';
 
-    /**
-     * @return void
-     */
     public function testMapContentItemKeysReturnsCorrectResponse(): void
     {
         // Arrange
@@ -54,9 +51,6 @@ class CmsContentWidgetContentConnectorFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testMapContentItemKeysForNotExistingKeyReturnsEmptyResult(): void
     {
         // Arrange

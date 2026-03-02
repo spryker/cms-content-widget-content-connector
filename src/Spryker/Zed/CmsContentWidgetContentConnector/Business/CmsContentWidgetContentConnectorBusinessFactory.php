@@ -18,17 +18,11 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
  */
 class CmsContentWidgetContentConnectorBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\CmsContentWidgetContentConnector\Business\Mapper\CmsContentItemKeyMapperInterface
-     */
     public function createCmsContentItemKeyMapper(): CmsContentItemKeyMapperInterface
     {
         return new CmsContentItemKeyMapper($this->getContentFacade());
     }
 
-    /**
-     * @return \Spryker\Zed\CmsContentWidgetContentConnector\Dependency\Facade\CmsContentWidgetContentConnectorToContentFacadeInterface
-     */
     public function getContentFacade(): CmsContentWidgetContentConnectorToContentFacadeInterface
     {
         return $this->getProvidedDependency(CmsContentWidgetContentConnectorDependencyProvider::FACADE_CONTENT);
